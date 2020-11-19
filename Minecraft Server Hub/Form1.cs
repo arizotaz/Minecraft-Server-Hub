@@ -233,23 +233,30 @@ namespace Minecraft_Server_Hub
             process();
             fullyloaded = true;
             string contents;
-            using (var wc = new WebClient())
+            try
             {
-                Debug.WriteLine(applicationData.Split('~')[2].Split('-')[1]);
-                contents = wc.DownloadString(applicationData.Split('~')[2].Split('-')[1]);
-            }
-            downloadsList = new ServerDownload[contents.Split(',').Length];
-            Debug.WriteLine(contents);
-            for(int i = 0; i < contents.Split(',').Length; i++)
-            {
-                downloadsList[i] = new ServerDownload();
-                downloadsList[i].name = contents.Split(',')[i].Split('-')[0];
-                downloadsList[i].url = contents.Split(',')[i].Split('-')[1];
-                newServerDownloadSelect.Items.Add(downloadsList[i].name);
-                if (i == 0)
+                using (var wc = new WebClient())
                 {
-                    newServerDownloadSelect.Text = downloadsList[i].name;
+                    Debug.WriteLine(applicationData.Split('~')[2].Split('-')[1]);
+                    contents = wc.DownloadString(applicationData.Split('~')[2].Split('-')[1]);
+                    downloadsList = new ServerDownload[contents.Split(',').Length];
+                    Debug.WriteLine(contents);
+                    for (int i = 0; i < contents.Split(',').Length; i++)
+                    {
+                        downloadsList[i] = new ServerDownload();
+                        downloadsList[i].name = contents.Split(',')[i].Split('-')[0];
+                        downloadsList[i].url = contents.Split(',')[i].Split('-')[1];
+                        newServerDownloadSelect.Items.Add(downloadsList[i].name);
+                        if (i == 0)
+                        {
+                            newServerDownloadSelect.Text = downloadsList[i].name;
+                        }
+                    }
                 }
+            }
+            catch
+            {
+                MessageBox.Show("Could not resolve download list, try restarting the app and connecting to the internet if not already connected.");
             }
             loadingPanel.Hide();
         }
@@ -562,7 +569,7 @@ namespace Minecraft_Server_Hub
 
             startInfo = new ProcessStartInfo("CMD.exe");
             startInfo.WindowStyle = ProcessWindowStyle.Minimized;
-            startInfo.Arguments = "/C title "+serverName+" & java -Xmx4G -Xms4G -jar \"" + serversPath + "/server.jar" + "\" nogui";
+            startInfo.Arguments = "/C title "+serverName+"&java -Xmx4G -Xms4G -jar \"" + serversPath + "/server.jar" + "\" nogui";
             test = Process.Start(startInfo);
 
             loadingPanelText.Text = "Server Open";
