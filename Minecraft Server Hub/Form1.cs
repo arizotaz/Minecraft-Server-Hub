@@ -243,8 +243,8 @@ namespace Minecraft_Server_Hub
             for(int i = 0; i < contents.Split(',').Length; i++)
             {
                 downloadsList[i] = new ServerDownload();
-                downloadsList[i].name = contents.Split(',')[i].Split('=')[0];
-                downloadsList[i].url = contents.Split(',')[i].Split('=')[1];
+                downloadsList[i].name = contents.Split(',')[i].Split('-')[0];
+                downloadsList[i].url = contents.Split(',')[i].Split('-')[1];
                 newServerDownloadSelect.Items.Add(downloadsList[i].name);
                 if (i == 0)
                 {
