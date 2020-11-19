@@ -43,16 +43,20 @@
             this.selectedServerName = new System.Windows.Forms.Label();
             this.newServerName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.newServerDownloadSelect = new System.Windows.Forms.ComboBox();
             this.newServerMotd = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.newServerPort = new System.Windows.Forms.TextBox();
-            this.newServerDownloadSelect = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.about = new System.Windows.Forms.Button();
+            this.loadingPanel = new System.Windows.Forms.Panel();
+            this.loadingPanelText = new System.Windows.Forms.Label();
             this.TitleBar.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.loadingPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -81,6 +85,7 @@
             // TitleBar
             // 
             this.TitleBar.BackColor = System.Drawing.Color.Blue;
+            this.TitleBar.Controls.Add(this.about);
             this.TitleBar.Controls.Add(this.button1);
             this.TitleBar.Controls.Add(this.label1);
             this.TitleBar.Location = new System.Drawing.Point(-1, -1);
@@ -223,6 +228,24 @@
             this.panel2.Size = new System.Drawing.Size(621, 150);
             this.panel2.TabIndex = 11;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label5.Location = new System.Drawing.Point(346, 13);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 17);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Server Version:";
+            // 
+            // newServerDownloadSelect
+            // 
+            this.newServerDownloadSelect.Location = new System.Drawing.Point(349, 32);
+            this.newServerDownloadSelect.Name = "newServerDownloadSelect";
+            this.newServerDownloadSelect.Size = new System.Drawing.Size(152, 21);
+            this.newServerDownloadSelect.TabIndex = 12;
+            this.newServerDownloadSelect.Click += new System.EventHandler(this.serverDownloadSelect_Click);
+            // 
             // newServerMotd
             // 
             this.newServerMotd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
@@ -273,23 +296,37 @@
             this.newServerPort.TabIndex = 7;
             this.newServerPort.Text = "25565";
             // 
-            // newServerDownloadSelect
+            // about
             // 
-            this.newServerDownloadSelect.Location = new System.Drawing.Point(349, 32);
-            this.newServerDownloadSelect.Name = "newServerDownloadSelect";
-            this.newServerDownloadSelect.Size = new System.Drawing.Size(152, 21);
-            this.newServerDownloadSelect.TabIndex = 12;
-            this.newServerDownloadSelect.Click += new System.EventHandler(this.serverDownloadSelect_Click);
+            this.about.Location = new System.Drawing.Point(584, 7);
+            this.about.Name = "about";
+            this.about.Size = new System.Drawing.Size(22, 22);
+            this.about.TabIndex = 3;
+            this.about.Text = "?";
+            this.about.UseVisualStyleBackColor = true;
+            this.about.Click += new System.EventHandler(this.about_Click);
             // 
-            // label5
+            // loadingPanel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label5.Location = new System.Drawing.Point(346, 13);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 17);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Server Version:";
+            this.loadingPanel.BackColor = System.Drawing.Color.DimGray;
+            this.loadingPanel.Controls.Add(this.loadingPanelText);
+            this.loadingPanel.Location = new System.Drawing.Point(-1, -1);
+            this.loadingPanel.Name = "loadingPanel";
+            this.loadingPanel.Size = new System.Drawing.Size(10, 125);
+            this.loadingPanel.TabIndex = 4;
+            // 
+            // loadingPanelText
+            // 
+            this.loadingPanelText.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.loadingPanelText.AutoSize = true;
+            this.loadingPanelText.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.loadingPanelText.ForeColor = System.Drawing.Color.White;
+            this.loadingPanelText.Location = new System.Drawing.Point(-296, -297);
+            this.loadingPanelText.Name = "loadingPanelText";
+            this.loadingPanelText.Size = new System.Drawing.Size(110, 31);
+            this.loadingPanelText.TabIndex = 0;
+            this.loadingPanelText.Text = "Loading";
+            this.loadingPanelText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -297,6 +334,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(645, 800);
+            this.Controls.Add(this.loadingPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.TitleBar);
@@ -313,6 +351,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.loadingPanel.ResumeLayout(false);
+            this.loadingPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -341,6 +381,9 @@
         private System.Windows.Forms.Button deleteServer;
         private System.Windows.Forms.ComboBox newServerDownloadSelect;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button about;
+        private System.Windows.Forms.Panel loadingPanel;
+        private System.Windows.Forms.Label loadingPanelText;
     }
 }
 

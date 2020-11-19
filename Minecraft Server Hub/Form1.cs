@@ -59,6 +59,9 @@ namespace Minecraft_Server_Hub
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            loadingPanel.Size = new Size(646, 810);
+            loadingPanel.Location = new Point(0,0);
+            loadingPanel.Show();
             //Debug.WriteLine(serverList[0].Name);
             Size = new Size(645, 630);
         }
@@ -248,6 +251,7 @@ namespace Minecraft_Server_Hub
                     newServerDownloadSelect.Text = downloadsList[i].name;
                 }
             }
+            loadingPanel.Hide();
         }
         public void process()
         {
@@ -463,9 +467,11 @@ namespace Minecraft_Server_Hub
         public string serverJarURL;
         private void newServer_Click(object sender, EventArgs e)
         {
+            loadingPanelText.Text = "Creating Server";
             Size = new Size(645, 630);
             if (newServerName.Text == "")
             {
+                loadingPanel.Hide();
                 return;
             }
             string serverName = newServerName.Text;
@@ -477,6 +483,7 @@ namespace Minecraft_Server_Hub
             if (File.Exists(serversPath + "/server.jar"))
             {
                 MessageBox.Show("Sorry this server is already created.  You must delete it before you may continue.");
+                loadingPanel.Hide();
                 return;
             }
             Debug.WriteLine(newServerDownloadSelect.Text);
@@ -488,6 +495,7 @@ namespace Minecraft_Server_Hub
                     Debug.WriteLine(serverJarURL);
                 }
             }
+            loadingPanelText.Text = "Downloading Server Jar";
             using (var client = new WebClient())
             {
                 client.DownloadFile(serverJarURL, serversPath+"/server.jar");
@@ -495,6 +503,8 @@ namespace Minecraft_Server_Hub
             Directory.CreateDirectory(serversPath);
 
             Directory.SetCurrentDirectory(serversPath);
+
+            loadingPanelText.Text = "Setting up Server";
 
             Process test;
             ProcessStartInfo startInfo = new ProcessStartInfo("CMD.exe");
@@ -548,10 +558,16 @@ namespace Minecraft_Server_Hub
             text = text.Replace("enable-command-block=false", "enable-command-block=true");
             File.WriteAllText(serversPath + "/server.properties", text);
 
+            loadingPanelText.Text = "Starting Server on port " + newServerPort.Text;
+
             startInfo = new ProcessStartInfo("CMD.exe");
             startInfo.WindowStyle = ProcessWindowStyle.Minimized;
             startInfo.Arguments = "/C title "+serverName+" & java -Xmx4G -Xms4G -jar \"" + serversPath + "/server.jar" + "\" nogui & pause";
             test = Process.Start(startInfo);
+
+            loadingPanelText.Text = "Server Open";
+            Thread.Sleep(1000);
+            loadingPanel.Hide();
         }
 
         private void openServerCreation_Click(object sender, EventArgs e)
@@ -587,6 +603,11 @@ namespace Minecraft_Server_Hub
         private void serverDownloadSelect_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void about_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Created by Arizotaz\n\nVersion: " + version, "About", MessageBoxButtons.OK,MessageBoxIcon.None);
         }
     }
 }
