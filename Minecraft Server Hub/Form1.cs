@@ -395,7 +395,7 @@ namespace Minecraft_Server_Hub
                 {
                     ProcessStartInfo startInfo = new ProcessStartInfo("CMD.exe");
                     startInfo.WindowStyle = ProcessWindowStyle.Minimized;
-                    startInfo.Arguments = "/C title " + serverList[selectedServer].Name + "&java -Xmx4G -Xms4G -jar \"" + serverList[selectedServer].Path + "/server.jar" + "\" nogui & pause";
+                    startInfo.Arguments = "/C title " + serverList[selectedServer].Name + "&java -Xmx4G -Xms4G -jar \"" + serverList[selectedServer].Path + "/server.jar" + "\" nogui";
                     Process.Start(startInfo);
                 }
                 else
@@ -562,7 +562,7 @@ namespace Minecraft_Server_Hub
 
             startInfo = new ProcessStartInfo("CMD.exe");
             startInfo.WindowStyle = ProcessWindowStyle.Minimized;
-            startInfo.Arguments = "/C title "+serverName+" & java -Xmx4G -Xms4G -jar \"" + serversPath + "/server.jar" + "\" nogui & pause";
+            startInfo.Arguments = "/C title "+serverName+" & java -Xmx4G -Xms4G -jar \"" + serversPath + "/server.jar" + "\" nogui";
             test = Process.Start(startInfo);
 
             loadingPanelText.Text = "Server Open";
