@@ -1,0 +1,20 @@
+A:\Program Data\VisualStudios\Projects\Minecraft Server Hub\Minecraft Server Hub\bin\Debug\Minecraft Server Hub.exe.config
+A:\Program Data\VisualStudios\Projects\Minecraft Server Hub\Minecraft Server Hub\bin\Debug\Minecraft Server Hub.exe
+A:\Program Data\VisualStudios\Projects\Minecraft Server Hub\Minecraft Server Hub\bin\Debug\Minecraft Server Hub.pdb
+A:\Program Data\VisualStudios\Projects\Minecraft Server Hub\Minecraft Server Hub\obj\Debug\Minecraft Server Hub.csprojAssemblyReference.cache
+A:\Program Data\VisualStudios\Projects\Minecraft Server Hub\Minecraft Server Hub\obj\Debug\Minecraft_Server_Hub.Properties.Resources.resources
+A:\Program Data\VisualStudios\Projects\Minecraft Server Hub\Minecraft Server Hub\obj\Debug\Minecraft Server Hub.csproj.GenerateResource.cache
+A:\Program Data\VisualStudios\Projects\Minecraft Server Hub\Minecraft Server Hub\obj\Debug\Minecraft Server Hub.csproj.CoreCompileInputs.cache
+A:\Program Data\VisualStudios\Projects\Minecraft Server Hub\Minecraft Server Hub\obj\Debug\Minecraft Server Hub.exe
+A:\Program Data\VisualStudios\Projects\Minecraft Server Hub\Minecraft Server Hub\obj\Debug\Minecraft Server Hub.pdb
+A:\Program Data\VisualStudios\Projects\Minecraft Server Hub\Minecraft Server Hub\obj\Debug\Minecraft_Server_Hub.Form1.resources
+C:\Users\cstai\source\repos\Minecraft Server Hub\Minecraft Server Hub\bin\Debug\Minecraft Server Hub.exe.config
+C:\Users\cstai\source\repos\Minecraft Server Hub\Minecraft Server Hub\bin\Debug\Minecraft Server Hub.exe
+C:\Users\cstai\source\repos\Minecraft Server Hub\Minecraft Server Hub\bin\Debug\Minecraft Server Hub.pdb
+C:\Users\cstai\source\repos\Minecraft Server Hub\Minecraft Server Hub\obj\Debug\Minecraft Server Hub.csprojAssemblyReference.cache
+C:\Users\cstai\source\repos\Minecraft Server Hub\Minecraft Server Hub\obj\Debug\Minecraft_Server_Hub.Form1.resources
+C:\Users\cstai\source\repos\Minecraft Server Hub\Minecraft Server Hub\obj\Debug\Minecraft_Server_Hub.Properties.Resources.resources
+C:\Users\cstai\source\repos\Minecraft Server Hub\Minecraft Server Hub\obj\Debug\Minecraft Server Hub.csproj.GenerateResource.cache
+C:\Users\cstai\source\repos\Minecraft Server Hub\Minecraft Server Hub\obj\Debug\Minecraft Server Hub.csproj.CoreCompileInputs.cache
+C:\Users\cstai\source\repos\Minecraft Server Hub\Minecraft Server Hub\obj\Debug\Minecraft Server Hub.exe
+C:\Users\cstai\source\repos\Minecraft Server Hub\Minecraft Server Hub\obj\Debug\Minecraft Server Hub.pdb
