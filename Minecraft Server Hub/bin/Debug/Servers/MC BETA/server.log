@@ -44,3 +44,21 @@
 2020-11-19 16:56:34 [INFO] /127.0.0.1:51893 lost connection
 2020-11-19 16:57:25 [INFO] Disconnecting /127.0.0.1:51896: Took too long to log in
 2020-11-19 16:57:55 [INFO] /127.0.0.1:51944 lost connection
+2020-11-21 18:55:41 [INFO] Starting minecraft server version Beta 1.3
+2020-11-21 18:55:41 [INFO] Loading properties
+2020-11-21 18:55:41 [INFO] Starting Minecraft server on *:25565
+2020-11-21 18:55:41 [INFO] Preparing level "world"
+2020-11-21 18:55:41 [INFO] Preparing start region
+2020-11-21 18:55:41 [INFO] Done (309520600ns)! For help, type "help" or "?"
+2020-11-21 18:55:42 [INFO] /0:0:0:0:0:0:0:1:56912 lost connection
+2020-11-21 18:55:55 [INFO] /198.199.98.246:53376 lost connection
+2020-11-21 18:56:11 [INFO] /127.0.0.1:56920 lost connection
+2020-11-21 18:56:11 [INFO] /127.0.0.1:56926 lost connection
+2020-11-21 18:56:11 [INFO] /127.0.0.1:56927 lost connection
+2020-11-21 18:56:11 [INFO] /127.0.0.1:56914 lost connection
+2020-11-21 18:56:11 [INFO] /127.0.0.1:56915 lost connection
+2020-11-21 18:56:11 [INFO] /127.0.0.1:56919 lost connection
+2020-11-21 18:56:52 [INFO] Disconnecting /127.0.0.1:56945: Took too long to log in
+2020-11-21 18:56:52 [INFO] Disconnecting /127.0.0.1:56946: Took too long to log in
+2020-11-21 18:57:03 [INFO] Disconnecting /127.0.0.1:56959: Took too long to log in
+2020-11-21 18:57:04 [INFO] Disconnecting /127.0.0.1:56962: Took too long to log in

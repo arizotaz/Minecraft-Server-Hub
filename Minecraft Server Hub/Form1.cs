@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32;
 using System;
+using Mono.Nat;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -567,10 +568,13 @@ namespace Minecraft_Server_Hub
 
             loadingPanelText.Text = "Starting Server on port " + newServerPort.Text;
 
+            /*
             startInfo = new ProcessStartInfo("CMD.exe");
             startInfo.WindowStyle = ProcessWindowStyle.Minimized;
             startInfo.Arguments = "/C title "+serverName+"&java -Xmx4G -Xms4G -jar \"" + serversPath + "/server.jar" + "\" nogui";
             test = Process.Start(startInfo);
+            */
+
 
             loadingPanelText.Text = "Server Open";
             Thread.Sleep(1000);
@@ -615,6 +619,13 @@ namespace Minecraft_Server_Hub
         private void about_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Created by Arizotaz\n\nVersion: " + version, "About", MessageBoxButtons.OK,MessageBoxIcon.None);
+        }
+
+        private void openport_Click(object sender, EventArgs e)
+        {
+            PortForward.port = int.Parse(serverList[selectedServer].Port);
+            PortForward pf = new PortForward();
+            MessageBox.Show("Open Port request sent to router");
         }
     }
 }

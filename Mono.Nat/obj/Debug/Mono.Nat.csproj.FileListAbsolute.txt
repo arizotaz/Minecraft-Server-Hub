@@ -1,0 +1,6 @@
+C:\Users\cstai\source\repos\Minecraft Server Hub\Mono.Nat\bin\Debug\Mono.Nat.dll
+C:\Users\cstai\source\repos\Minecraft Server Hub\Mono.Nat\bin\Debug\Mono.Nat.pdb
+C:\Users\cstai\source\repos\Minecraft Server Hub\Mono.Nat\obj\Debug\Mono.Nat.csprojAssemblyReference.cache
+C:\Users\cstai\source\repos\Minecraft Server Hub\Mono.Nat\obj\Debug\Mono.Nat.csproj.CoreCompileInputs.cache
+C:\Users\cstai\source\repos\Minecraft Server Hub\Mono.Nat\obj\Debug\Mono.Nat.dll
+C:\Users\cstai\source\repos\Minecraft Server Hub\Mono.Nat\obj\Debug\Mono.Nat.pdb

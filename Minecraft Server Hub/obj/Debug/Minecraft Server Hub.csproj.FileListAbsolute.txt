@@ -28,3 +28,6 @@ A:\Program Data\VisualStudios\Projects\Minecraft-Server-Hub\Minecraft Server Hub
 A:\Program Data\VisualStudios\Projects\Minecraft-Server-Hub\Minecraft Server Hub\obj\Debug\Minecraft Server Hub.csproj.CoreCompileInputs.cache
 A:\Program Data\VisualStudios\Projects\Minecraft-Server-Hub\Minecraft Server Hub\obj\Debug\Minecraft Server Hub.exe
 A:\Program Data\VisualStudios\Projects\Minecraft-Server-Hub\Minecraft Server Hub\obj\Debug\Minecraft Server Hub.pdb
+C:\Users\cstai\source\repos\Minecraft Server Hub\Minecraft Server Hub\bin\Debug\Mono.Nat.dll
+C:\Users\cstai\source\repos\Minecraft Server Hub\Minecraft Server Hub\bin\Debug\Mono.Nat.pdb
+C:\Users\cstai\source\repos\Minecraft Server Hub\Minecraft Server Hub\obj\Debug\Minecraft Server Hub.csproj.CopyComplete
