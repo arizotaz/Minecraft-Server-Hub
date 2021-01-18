@@ -627,5 +627,10 @@ namespace Minecraft_Server_Hub
             PortForward pf = new PortForward();
             MessageBox.Show("Open Port request sent to router");
         }
+
+        private void hubPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

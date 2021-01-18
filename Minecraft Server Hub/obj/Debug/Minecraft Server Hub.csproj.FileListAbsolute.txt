@@ -31,3 +31,6 @@ A:\Program Data\VisualStudios\Projects\Minecraft-Server-Hub\Minecraft Server Hub
 C:\Users\cstai\source\repos\Minecraft Server Hub\Minecraft Server Hub\bin\Debug\Mono.Nat.dll
 C:\Users\cstai\source\repos\Minecraft Server Hub\Minecraft Server Hub\bin\Debug\Mono.Nat.pdb
 C:\Users\cstai\source\repos\Minecraft Server Hub\Minecraft Server Hub\obj\Debug\Minecraft Server Hub.csproj.CopyComplete
+A:\Program Data\VisualStudios\Projects\Minecraft-Server-Hub\Minecraft Server Hub\bin\Debug\Mono.Nat.dll
+A:\Program Data\VisualStudios\Projects\Minecraft-Server-Hub\Minecraft Server Hub\bin\Debug\Mono.Nat.pdb
+A:\Program Data\VisualStudios\Projects\Minecraft-Server-Hub\Minecraft Server Hub\obj\Debug\Minecraft Server Hub.csproj.CopyComplete
