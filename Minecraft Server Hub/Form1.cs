@@ -542,8 +542,9 @@ namespace Minecraft_Server_Hub
                 {
                     allowPass = true;
                 }
-                if (sw.ElapsedMilliseconds > 12000)
+                if (sw.ElapsedMilliseconds > 20000)
                 {
+                    MessageBox.Show("Some Files may have not been created, this may cause a crash");
                     allowPass = true;
                 }
                 Thread.Sleep(10);
